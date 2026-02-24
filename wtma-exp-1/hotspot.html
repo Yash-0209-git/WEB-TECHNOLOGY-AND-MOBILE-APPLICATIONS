@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamil Nadu Map with 5 City Hotspots</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Embedded CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .map-container {
+            margin-top: 20px;
+        }
+
+        iframe {
+            border: 3px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color:darkred;">Tamil Nadu State Map</h1>
+
+    <!-- Navigation Links -->
+    <p>
+        <a href="#map">View Map</a> |
+        <a href="https://www.tn.gov.in" target="_blank">Tamil Nadu Government Website</a>
+    </p>
+
+    <!-- Map Section -->
+    <div class="map-container" id="map">
+
+        <!-- Tamil Nadu Map Image -->
+        <img src="tamilnadu.jpg" 
+             alt="Tamil Nadu Map" 
+             usemap="#tnmap" 
+             width="500">
+
+        <!-- Image Map with 5 Hotspots -->
+        <map name="tnmap">
+
+            <!-- Chennai -->
+            <area shape="rect" 
+                  coords="350,50,450,120" 
+                  href="https://en.wikipedia.org/wiki/Chennai" 
+                  target="infoframe" 
+                  alt="Chennai">
+
+            <!-- Coimbatore -->
+            <area shape="rect" 
+                  coords="50,250,150,350" 
+                  href="https://en.wikipedia.org/wiki/Coimbatore" 
+                  target="infoframe" 
+                  alt="Coimbatore">
+
+            <!-- Madurai -->
+            <area shape="rect" 
+                  coords="250,300,350,380" 
+                  href="https://en.wikipedia.org/wiki/Madurai" 
+                  target="infoframe" 
+                  alt="Madurai">
+
+            <!-- Tiruchirappalli -->
+            <area shape="rect" 
+                  coords="250,220,340,290" 
+                  href="https://en.wikipedia.org/wiki/Tiruchirappalli" 
+                  target="infoframe" 
+                  alt="Tiruchirappalli">
+
+            <!-- Salem -->
+            <area shape="rect" 
+                  coords="200,150,290,220" 
+                  href="https://en.wikipedia.org/wiki/Salem,_Tamil_Nadu" 
+                  target="infoframe" 
+                  alt="Salem">
+
+        </map>
+    </div>
+
+    <!-- Iframe to display hotspot content -->
+    <iframe name="infoframe" 
+            width="800" 
+            height="400">
+    </iframe>
+
+    <!-- Inline CSS Example -->
+    <p style="color:green; font-weight:bold;">
+        Click on any of the 5 highlighted cities to view information in the frame below.
+    </p>
+
+</body>
+</html>
