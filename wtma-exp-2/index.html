@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 350px;
+            margin: 60px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+        }
+
+        .gender {
+            width: auto;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        .success {
+            color: green;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form id="regForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name">
+
+            <label>Email</label>
+            <input type="text" id="email">
+
+            <label>Password</label>
+            <input type="password" id="password">
+
+            <label>Gender</label>
+            <input type="radio" name="gender" value="Male" class="gender"> Male
+            <input type="radio" name="gender" value="Female" class="gender"> Female
+
+            <label>Course</label>
+            <select id="course">
+                <option value="">-- Select Course --</option>
+                <option>BCA</option>
+                <option>BSc</option>
+                <option>BCom</option>
+                <option>BA</option>
+            </select>
+
+            <button type="submit">Register</button>
+
+            <p id="message"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
